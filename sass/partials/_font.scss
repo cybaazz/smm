@@ -1,0 +1,53 @@
+@import "./var";
+
+// All the @MIXINS are named using CAMEL CASE naming convention
+@mixin PageTitle(){
+        // defult styles
+        color: inherit;
+        font-size: $big-title;
+        font-weight: $medium;
+        // for mobile version
+        @media screen and (max-width: $small){
+           font-size: $sml-title; 
+        }
+}
+@mixin PageHeading(){
+        // defult styles
+        color: inherit;
+        font-size: $big-heading;
+        font-weight: normal;
+        // for mobile version
+        @media screen and (max-width: $small){
+           font-size: $sml-heading; 
+        }
+}
+@mixin PageSub(){
+        // defult styles
+        color: inherit;
+        font-size: $big-subheading;
+        font-weight: $light;
+        // for mobile version
+        @media screen and (max-width: $small){
+           font-size: $sml-subheading; 
+        }
+}
+@mixin PageText(){
+        // defult styles
+        color: inherit;
+        font-size: $big-text;
+        font-weight: $light;
+        // for mobile version
+        @media screen and (max-width: $small){
+           font-size: $sml-text; 
+        }
+}
+@mixin PageXmlText(){
+        // defult styles
+        color: inherit;
+        font-size: $big-text-xml;
+        font-weight: $light;
+        // for mobile version
+        @media screen and (max-width: $small){
+           font-size: $sml-text-xml; 
+        }
+}

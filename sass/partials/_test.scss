@@ -1,0 +1,9 @@
+// This sass files is only for adding debugging selectors and styles
+
+@mixin test($color){
+    background-color: $color;
+}
+
+@mixin testBorder($width, $style, $color){
+    border: $width $style $color;
+}

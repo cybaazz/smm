@@ -1,0 +1,23 @@
+@import "./var";
+@import "./font";
+
+// Any improtant and resuable code block will be written here as utility block
+@mixin LightBorder($size){
+    border: $size solid $black-light;
+}
+
+@mixin PageBTN--outline(){
+    padding: 7px 13px;
+    outline: 1px solid $black-button;
+    outline-offset: -1px;
+    @include PageText();
+    color: $black-button;
+    border-radius: 500px;
+}
+@mixin PageBTN--fill(){
+    padding: 7px 13px;
+    background-color: $black-button;
+    @include PageText();
+    color: $white-button;
+    border-radius: 500px;
+}
